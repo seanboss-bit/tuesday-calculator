@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="bubbles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+      <span class="five"></span>
+      <span class="six"></span>
+      <span class="seven"></span>
+    </div>
+    <div class="container">
+      <form action="#" name="forms" id="form">
+        <input type="text" name="answers" id="answer" />
+        <div class="buttons">
+          <input type="button" value="AC" id="clear"/>
+          <input type="button" value="DEL" id="delete" />
+          <input
+            type="button"
+            value="&percnt;"
+            onclick="forms.answers.value += '&percnt;'"
+          />
+          <input
+            type="button"
+            value="&divide;"
+            onclick="forms.answers.value += '/'"
+          />
+        </div>
+        <div class="buttons">
+          <input type="button" value="7" onclick="forms.answers.value += '7'" />
+          <input type="button" value="8" onclick="forms.answers.value += '8'" />
+          <input type="button" value="9" onclick="forms.answers.value += '9'" />
+          <input
+            type="button"
+            value="&times;"
+            onclick="forms.answers.value += '*'"
+          />
+        </div>
+        <div class="buttons">
+          <input type="button" value="4" onclick="forms.answers.value += '4'" />
+          <input type="button" value="5" onclick="forms.answers.value += '5'" />
+          <input type="button" value="6" onclick="forms.answers.value += '6'" />
+          <input
+            type="button"
+            value="&minus;"
+            onclick="forms.answers.value += '-'"
+          />
+        </div>
+        <div class="buttons">
+          <input type="button" value="1" onclick="forms.answers.value += '1'" />
+          <input type="button" value="2" onclick="forms.answers.value += '2'" />
+          <input type="button" value="3" onclick="forms.answers.value += '3'" />
+          <input
+            type="button"
+            value="&plus;"
+            onclick="forms.answers.value += '+'"
+          />
+        </div>
+        <div class="buttons">
+          <input type="button" value="0" onclick="forms.answers.value += '0'" />
+          <input
+            type="button"
+            value="00"
+            onclick="forms.answers.value += '00'"
+          />
+          <input
+            type="button"
+            value="&dot;"
+            onclick="forms.answers.value += '.'"
+          />
+          <input
+            type="button"
+            value="&equals;"
+            id="equals"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
