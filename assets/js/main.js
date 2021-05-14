@@ -3,13 +3,16 @@ const answer = document.querySelector("#answer");
 const equalTo = document.querySelector("#equals");
 const remove = document.querySelector("#delete");
 
-clear.addEventListener("click", () => {
+clear.addEventListener("click", (e) => {
+  e.preventDefault();
   answer.value = null;
 });
 
-equalTo.addEventListener("click", () => {
+equalTo.addEventListener("click", (e) => {
+  e.preventDefault();
   answer.value = eval(answer.value);
 });
-remove.addEventListener("click", () => {
+remove.addEventListener("click", (e) => {
+  e.preventDefault();
   answer.value = answer.value.substr(0, answer.value.length - 1);
 });

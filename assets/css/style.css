@@ -100,3 +100,13 @@ body {
     background: rgba(255, 255, 255, 0.3);
     transition: 0.3s all ease;
 }
+@media screen and (max-width: 300px){
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        width: 80%;
+    }
+}
